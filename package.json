@@ -1,0 +1,14 @@
+{
+  "name": "poke-auction",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "test": "pnpm --filter @poke-auction/shared test",
+    "test:watch": "pnpm --filter @poke-auction/shared test:watch",
+    "dev:server": "pnpm --filter @poke-auction/server dev",
+    "dev:client": "pnpm --filter @poke-auction/client dev",
+    "deploy:server": "pnpm --filter @poke-auction/server deploy",
+    "build:client": "pnpm --filter @poke-auction/client build",
+    "deploy": "pnpm build:client && pnpm deploy:server"
+  }
+}
